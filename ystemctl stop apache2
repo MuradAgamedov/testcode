@@ -1,0 +1,17 @@
+[0;1;32m●[0m php8.3-fpm.service - The PHP 8.3 FastCGI Process Manager
+     Loaded: loaded (]8;;file://srv872972/usr/lib/systemd/system/php8.3-fpm.service/usr/lib/systemd/system/php8.3-fpm.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Wed 2025-06-18 12:44:09 UTC; 6min ago
+       Docs: ]8;;man:php-fpm8.3(8)man:php-fpm8.3(8)]8;;
+    Process: 25891 ExecStartPost=/usr/lib/php/php-fpm-socket-helper install /run/php/php-fpm.sock /etc/php/8.3/fpm/pool.d/www.conf 83 (code=exited, status=0/SUCCESS)
+   Main PID: 25887 (php-fpm8.3)
+     Status: "[0;1;36mProcesses active: 0, idle: 2, Requests: 0, slow: 0, Traffic: 0req/sec[0m"
+      Tasks: 3 (limit: 19147)
+     Memory: 11.3M (peak: 12.7M)
+        CPU: 73ms
+     CGroup: /system.slice/php8.3-fpm.service
+             ├─[0;38;5;245m25887 "php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)"[0m
+             ├─[0;38;5;245m25889 "php-fpm: pool www"[0m
+             └─[0;38;5;245m25890 "php-fpm: pool www"[0m
+
+Jun 18 12:44:08 srv872972 systemd[1]: Starting php8.3-fpm.service - The PHP 8.3 FastCGI Process Manager...
+Jun 18 12:44:09 srv872972 systemd[1]: Started php8.3-fpm.service - The PHP 8.3 FastCGI Process Manager.
